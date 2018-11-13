@@ -100,6 +100,26 @@ export const constantRouterMap = [
         meta: { title: 'guide', icon: 'guide', noCache: true }
       }
     ]
+  },
+  {
+    path:'/consult',
+    component:Layout,
+    redirect:'/consulting/consultmange',
+    meta: { title: '咨询管理', icon: 'guide', noCache: true },
+    children: [
+      {
+        path: 'consultmange',
+        component: () => import('@/views/consulting/consultmange'),
+        name: 'index',
+        meta: { title: '咨询列表', icon: '', noCache: true }
+      },
+      {
+        path: 'consultlist',
+        component: () => import('@/views/consulting/consultlist'),
+        name: 'index',
+        meta: { title: '咨询分类', icon: '', noCache: true }
+      }
+    ]
   }
 ]
 

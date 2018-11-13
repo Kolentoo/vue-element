@@ -121,7 +121,7 @@ export default {
       height: 20px;
     }
     .international{
-      vertical-align: top;
+      vertical-align: top;display: none;
     }
     .theme-switch {
       vertical-align: 15px;
