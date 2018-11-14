@@ -95,7 +95,7 @@ export default {
   },
   watch: {
     lang() {
-      this.setOptions()
+      // this.setOptions()
     }
   },
   created() {
@@ -104,25 +104,25 @@ export default {
       this.$i18n.mergeLocaleMessage('zh', local.zh)
       this.$i18n.mergeLocaleMessage('es', local.es)
     }
-    this.setOptions() // set default select options
+    // this.setOptions() // set default select options
   },
   methods: {
-    setOptions() {
-      this.options = [
-        {
-          value: '1',
-          label: this.$t('i18nView.one')
-        },
-        {
-          value: '2',
-          label: this.$t('i18nView.two')
-        },
-        {
-          value: '3',
-          label: this.$t('i18nView.three')
-        }
-      ]
-    }
+    // setOptions() {
+    //   this.options = [
+    //     {
+    //       value: '1',
+    //       label: this.$t('i18nView.one')
+    //     },
+    //     {
+    //       value: '2',
+    //       label: this.$t('i18nView.two')
+    //     },
+    //     {
+    //       value: '3',
+    //       label: this.$t('i18nView.three')
+    //     }
+    //   ]
+    // }
   }
 }
 </script>
